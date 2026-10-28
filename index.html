@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunaal Goyal — Personal Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <p class="brand">Kunaal Goyal</p>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" type="button">Switch to Dark Mode</button>
+    </header>
+
+    <main id="main">
+      <h1>Kunaal Goyal</h1>
+      <p class="lede">
+        A student at JECRC University studying B.Tech CSE With Specialisation in AI/ML.
+      </p>
+
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I’m a B.Tech Computer Science student specializing in AI/ML at JECRC University. Passionate about bringing creative concepts to life, I blend technical skills in Python and AI development with visual storytelling through video editing and photography. I enjoy building intelligent applications and crafting compelling media content that connects with audiences.
+        </p>
+        <p>
+          I live in Alwar, Rajasthan, I have strong interest in social media fields such as Video Editing and Photography.
+        </p>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="skill-list">
+          <li>Video Shoot</li>
+          <li>Photo Shoot</li>
+          <li>Video Editing</li>
+          <li>Photo Editing</li>
+          <li>Web Development</li>
+        </ul>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="project-toolbar">
+          <label class="project-search-label" for="project-search">
+            Search projects
+          </label>
+          <input
+            id="project-search"
+            class="project-search"
+            type="search"
+            placeholder="Search by name or technology"
+            autocomplete="off"
+            aria-describedby="project-results-status"
+          />
+          <fieldset class="project-tech-filters">
+            <legend>Filter by technology</legend>
+            <div id="project-tech-buttons" class="project-tech-buttons"></div>
+          </fieldset>
+        </div>
+        <p
+          id="project-results-status"
+          class="project-results-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+        <ul class="project-list">
+          <li data-name="Basic Python Programs" data-tech="Python">
+            <a href="https://github.com/kunaal-goyal/Python-basics-25BCON0619.git">
+              Basic Python Programs
+            </a>
+            <p>
+              A collection of foundational code implementations focusing on key algorithmic logic and data structure concepts. Features optimized code for generating the Fibonacci series, calculating factorials, and working with custom data structures
+            </p>
+            <p class="tech-tags"><span>Python</span></p>
+          </li>
+          <li data-name="Buggy Python Code" data-tech="Python">
+            <a href="https://github.com/kunaal-goyal/Session8.git">
+              Buggy Python Code
+            </a>
+            <p>
+              A collection of intentionally flawed Python scripts designed to practice, test, and master advanced debugging techniques. This project highlights systematic problem-solving skills, exception handling, and the ability to identify and resolve logical errors and edge-case failures.
+            </p>
+            <p class="tech-tags"><span>Python</span></p>
+          </li>
+          <li data-name="Reading list app" data-tech="HTML, CSS, JavaScript">
+            <a href="https://github.com/kunaal-goyal/reading-list-app.git">
+              Reading list app
+            </a>
+            <p>
+              A dynamic web application designed to help users track, organize, and manage their personal reading collections. Built with a responsive interface, it allows users to log books, update reading progress, and maintain a personalized digital bookshelf with ease.
+            </p>
+            <p class="tech-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Contact:
+        <a href="mailto:kunaal.25bcon0619@jecrcu.edu.in">
+          kunaal.25bcon0619@jecrcu.edu.in
+        </a>
+      </p>
+      <p>
+        <span id="2026"></span>
+        Kunaal Goyal. Built as a personal profile page.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
